@@ -1,0 +1,11 @@
+<Project>
+
+    <!-- 
+        Property that references a version of "vale" (https://github.com/errata-ai/vale).
+        If configured correctly, renovate should be able to updates this to the latest vale version
+    -->
+    <PropertyGroup>
+        <ValeVersion>3.3.0</ValeVersion>
+    </PropertyGroup>
+
+</Project>

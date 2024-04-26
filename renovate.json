@@ -1,0 +1,14 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "regexManagers": [
+        {
+          "fileMatch": ["^.*\\.csproj$"],
+          "matchStrings": [
+            "<ValeVersion>(?<currentValue>\\d+\\.\\d+\\.\\d+)</ValeVersion>"
+          ],
+          "depNameTemplate": "errata-ai/vale",
+          "datasourceTemplate": "github-releases",
+          "extractVersionTemplate": "^v(?<version>.*)$"
+        }
+      ]
+  }

@@ -9,6 +9,16 @@
           "depNameTemplate": "errata-ai/vale",
           "datasourceTemplate": "github-releases",
           "extractVersionTemplate": "^v(?<version>.*)$"
+        },
+        {
+          "fileMatch": ["^.*\\.txt$"],
+          "matchStrings": [
+            "^NEWTONSOFT_JSON_VERSION\\s*=\\s\"(?<currentValue>.+)\"$"            
+          ],
+          "depNameTemplate": "Newtonsoft.Json",
+          "datasourceTemplate": "nuget"
         }
       ]
   }
+
+  
